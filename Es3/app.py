@@ -30,7 +30,7 @@ par1 = st.text_input('inserisci un numero!',key=int)
 
 parole1 = paridispari(par1)
 
-st.write(par1)
+st.write(parole1)
     
 # if __name__ == '__main__':
 #         main()
