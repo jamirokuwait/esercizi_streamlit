@@ -5,7 +5,7 @@ import pandas as pd
 st.title('Esercizio numero 2')
 
 num1 = st.slider('inserire un numero',0,100)
-st.write("I'm ", age, 'years old')
+st.write("I'm ", num1, 'years old')
 num2 = st.slider('inserire un altro numero',0,100)
 num3 = st.slider('inserire un terzo numero',0,100)
 
