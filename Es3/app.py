@@ -20,7 +20,7 @@ caso1 = paridispari(num1)
 
 st.write(caso1)
 
-num2 = st.slider('inserisci un numero!',1,100)
+num2 = st.slider('inserisci un altro numero!',1,100)
 
 caso2 = paridispari(num2)
 
