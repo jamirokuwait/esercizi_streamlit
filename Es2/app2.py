@@ -6,10 +6,13 @@ def main():
 
     num1 = st.slider('inserire il primo numero',0,100)
     st.write("ho ", num1, ' anni')
+    
     num2 = st.slider('inserire il secondo numero',0,100)
     st.write("ho ", num2, ' anni')
+    
     num3 = st.slider('inserire il terzo numero',0,100)
     st.write("ho ", num3, ' anni')
+    
 
     def checknum (a,b,c):
         if a > b and a > c:

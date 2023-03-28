@@ -25,6 +25,12 @@ num2 = st.slider('inserisci un altro numero!',1,100)
 caso2 = paridispari(num2)
 
 st.write(caso2)
+
+par1 = st.text_input('inserisci un numero!')
+par1 = int(par1)
+parole1 = paridispari(par1)
+
+st.write(par1)
     
 # if __name__ == '__main__':
 #         main()
