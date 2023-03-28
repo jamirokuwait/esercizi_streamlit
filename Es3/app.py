@@ -26,8 +26,8 @@ caso2 = paridispari(num2)
 
 st.write(caso2)
 
-par1 = st.text_input('inserisci un numero!')
-par1 = int(par1)
+par1 = st.text_input('inserisci un numero!',key=int)
+
 parole1 = paridispari(par1)
 
 st.write(par1)
