@@ -32,8 +32,8 @@ def main():
 
     parole1 = paridispari(par1)
 
-    # st.write(parole1)
-    st.write(result.get(parole1))
+    st.write(parole1)
+  
 
 if __name__ == '__main__':
     main()
