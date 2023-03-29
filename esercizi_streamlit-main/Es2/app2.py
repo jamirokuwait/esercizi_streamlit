@@ -6,23 +6,23 @@ def checknummax(a, b, c):
        if a > b and a > c:
             caso = st.write(a, 'è il numero maggiore dei tre')
             return caso
-        elif b > a and b > c:
-            caso = st.write(b, 'è il numero maggiore dei tre')
-            return caso
-        elif c > a and c > b:
+       elif b > a and b > c:
+           caso = st.write(b, 'è il numero maggiore dei tre')
+           return caso
+       elif c > a and c > b:
             caso = st.write(c, 'è il numero maggiore dei tre')
             return caso
 
 def checknummin(a, b, c):
        if a < b and a < c:
-            caso = st.write(a, 'è il numero minore dei tre')
-            return caso
-        elif b < a and b < c:
-            caso = st.write(b, 'è il numero minore dei tre')
-            return caso
-        elif c < a and c < b:
-            caso = st.write(c, 'è il numero minore dei tre')
-            return caso
+           caso = st.write(a, 'è il numero minore dei tre')
+           return caso
+       elif b < a and b < c:
+           caso = st.write(b, 'è il numero minore dei tre')
+           return caso
+       elif c < a and c < b:
+           caso = st.write(c, 'è il numero minore dei tre')
+           return caso
 
 def main():
     st.title('Esercizio numero 2')
