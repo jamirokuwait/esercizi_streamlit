@@ -28,17 +28,17 @@ def main():
     st.title('Esercizio numero 2')
 
     num1 = st.slider('inserire il primo numero', 0, 100)
-    num1_1 = st.number_input('inserisci un numero!',0,1000)
+    num1_1 = st.number_input('inserisci un numero!',1000)
     st.write("ho ", num1, ' anni')
     st.write("ho ", num1_1, ' anni','(numb input)')
 
     num2 = st.slider('inserire il secondo numero', 0, 100)
-    num2_1 = st.number_input('inserisci un numero!',0,1000)
+    num2_1 = st.number_input('inserisci un numero!',1000)
     st.write("ho ", num2, ' anni')
     st.write("ho ", num2_1, ' anni','(numb input)')
 
     num3 = st.slider('inserire il terzo numero', 0, 100)
-    num3_1 = st.number_input('inserisci un numero!',0,1000)
+    num3_1 = st.number_input('inserisci un numero!',1000)
     st.write("ho ", num3, ' anni')
     st.write("ho ", num3_1, ' anni','(numb input)')
 
