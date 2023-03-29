@@ -9,7 +9,7 @@ def checknummax(a, b, c):
        elif b > a and b > c:
            caso = st.write(b, 'è il numero maggiore dei tre')
            return caso
-       else c > a and c > b:
+       elif c > a and c > b:
             caso = st.write(c, 'è il numero maggiore dei tre')
             return caso
 
@@ -20,7 +20,7 @@ def checknummin(a, b, c):
        elif b < a and b < c:
            caso = st.write(b, 'è il numero minore dei tre')
            return caso
-       else c < a and c < b:
+       elif c < a and c < b:
            caso = st.write(c, 'è il numero minore dei tre')
            return caso
 
