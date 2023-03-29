@@ -28,7 +28,7 @@ def main():
 
     st.write(caso2)
 
-    par1 = st.number_input('inserisci un numero!',0,10)
+    par1 = st.number_input('inserisci un numero!',0,1000)
     
     
 
