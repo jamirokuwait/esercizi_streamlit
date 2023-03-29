@@ -45,7 +45,7 @@ def main():
     # caso = checknummax(num1, num2, num3),checknummin(num1,num2,num3)
     # caso2 = checknummax(num1_1, num2_1, num3_1),checknummin(num1_1,num2_1,num3_1)
     
-    st.write('input slide:',checknummax(num1, num2, num3),'input slide:',checknummin(num1,num2,num3),'input slide:',checknummax(num1_1, num2_1, num3_1),'input slide:',checknummin(num1_1,num2_1,num3_1))
+    # st.write('input slide:',checknummax(num1, num2, num3),'input slide:',checknummin(num1,num2,num3),'input slide:',checknummax(num1_1, num2_1, num3_1),'input slide:',checknummin(num1_1,num2_1,num3_1))
     #st.write('input:',checknummax(num1_1, num2_1, num3_1),'input:',checknummin(num1_1,num2_1,num3_1))
 
 if __name__ == '__main__':
