@@ -28,11 +28,12 @@ def main():
 
     st.write(caso2)
 
-    par1 = st.text_input('inserisci un numero!', key=int)
+    par1 = st.text_input('inserisci un numero!')
 
     parole1 = paridispari(par1)
 
-    st.write(parole1)
+    # st.write(parole1)
+    st.write(result.get(parole1))
 
 if __name__ == '__main__':
     main()
