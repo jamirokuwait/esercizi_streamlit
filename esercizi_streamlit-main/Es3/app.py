@@ -29,6 +29,8 @@ def main():
     st.write(caso2)
 
     par1 = st.text_input('inserisci un numero!')
+    
+    par1 = int(par1)
 
     parole1 = paridispari(par1)
 
