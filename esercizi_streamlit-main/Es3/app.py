@@ -28,9 +28,9 @@ def main():
 
     st.write(caso2)
 
-    par1 = st.text_input('inserisci un numero!')
+    par1 = st.number_input('inserisci un numero!',0,10)
     
-    par1 = int(par1)
+    
 
     parole1 = paridispari(par1)
 
