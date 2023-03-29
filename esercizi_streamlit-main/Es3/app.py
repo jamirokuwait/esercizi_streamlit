@@ -14,25 +14,25 @@ def paridispari(a):
 def main():
 
 
-st.title('es. numero 3')
+    st.title('es. numero 3')
 
-num1 = st.slider('inserisci un numero!', 1, 100)
+    num1 = st.slider('inserisci un numero!', 1, 100)
 
-caso1 = paridispari(num1)
+    caso1 = paridispari(num1)
 
-st.write(caso1)
+    st.write(caso1)
 
-num2 = st.slider('inserisci un altro numero!', 1, 100)
+    num2 = st.slider('inserisci un altro numero!', 1, 100)
 
-caso2 = paridispari(num2)
+    caso2 = paridispari(num2)
 
-st.write(caso2)
+    st.write(caso2)
 
-par1 = st.text_input('inserisci un numero!', key=int)
+    par1 = st.text_input('inserisci un numero!', key=int)
 
-parole1 = paridispari(par1)
+    parole1 = paridispari(par1)
 
-st.write(parole1)
+    st.write(parole1)
 
 if __name__ == '__main__':
     main()
