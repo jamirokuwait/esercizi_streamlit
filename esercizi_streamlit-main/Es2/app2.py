@@ -42,8 +42,8 @@ def main():
     st.write("ho ", num3, ' anni')
     st.write("ho ", num3_1, ' anni','(numb input)')
 
-    caso = checknummax(num1, num2, num3)
-    st.write(caso, '(input)')
+    caso = st.write(checknummax(num1, num2, num3), '(input)')
+    caso
     # caso = checknummax(num1, num2, num3),checknummin(num1,num2,num3)
     # caso2 = checknummax(num1_1, num2_1, num3_1),checknummin(num1_1,num2_1,num3_1)
     
