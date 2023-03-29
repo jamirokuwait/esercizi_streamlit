@@ -13,6 +13,17 @@ def checknummax(a, b, c):
             caso = st.write(c, 'è il numero maggiore dei tre')
             return caso
 
+def checknummax_(a, b, c):
+       if a > b and a > c:
+            caso = st.write(a, 'è il numero maggiore dei tre(input)')
+            return caso
+       elif b > a and b > c:
+           caso = st.write(b, 'è il numero maggiore dei tre(input)')
+           return caso
+       elif c > a and c > b:
+            caso = st.write(c, 'è il numero maggiore dei tre(input)')
+            return caso
+
 def checknummin(a, b, c):
        if a < b and a < c:
            caso = st.write(a, 'è il numero minore dei tre')
@@ -22,6 +33,17 @@ def checknummin(a, b, c):
            return caso
        elif c < a and c < b:
            caso = st.write(c, 'è il numero minore dei tre')
+           return caso
+       
+def checknummin_(a, b, c):
+       if a < b and a < c:
+           caso = st.write(a, 'è il numero minore dei tre(input)')
+           return caso
+       elif b < a and b < c:
+           caso = st.write(b, 'è il numero minore dei tre(input)')
+           return caso
+       elif c < a and c < b:
+           caso = st.write(c, 'è il numero minore dei tre(input)')
            return caso
 
 def main():
@@ -42,7 +64,10 @@ def main():
     st.write("ho ", num3, ' anni')
     st.write("ho ", num3_1, ' anni','(numb input)')
 
-    checknummax(num1, num2, num3), '(input)'
+    checknummax(num1, num2, num3)
+    checknummax_(num1_1, num2_1, num3_1)
+    checknummin(num1,num2,num3)
+    checknummin_(num1_1,num2_1,num3_1)
     
     # caso = checknummax(num1, num2, num3),checknummin(num1,num2,num3)
     # caso2 = checknummax(num1_1, num2_1, num3_1),checknummin(num1_1,num2_1,num3_1)
