@@ -33,27 +33,27 @@ st.write(calcio_df[calcio_df.competition_name == 'FIFA World Cup'])
 #     x = st.write('ID:', i['match_id'],  i['home_team']['home_team_name'],  # carico i dati relativi a squadre e risultato
 #                  i['home_score'], '-', i['away_score'], i['away_team']['away_team_name'], '-', i['home_team']['home_team_group'])
 
-with open('open-data-master/data/events/7567.json') as f:
+with open('Es4/7567.json') as f:
     korger = json.load(f)  # carico eventi partita specifica
 
 df = pd.json_normalize(korger, sep='_').assign(match_id="7567")
 
 
 cols = list(df.columns.values)  # Make a list of all of the columns in the df
-cols.pop(cols.index('id'))  # Remove b from list
-cols.pop(cols.index('index'))  # Remove b from list
-cols.pop(cols.index('period'))  # Remove b from list
-cols.pop(cols.index('minute'))  # Remove b from list
-cols.pop(cols.index('second'))  # Remove b from list
-cols.pop(cols.index('possession'))  # Remove b from list
-cols.pop(cols.index('tactics_formation'))  # Remove b from list
-cols.pop(cols.index('tactics_lineup'))  # Remove b from list
-cols.pop(cols.index('play_pattern_id'))  # Remove b from list
-cols.pop(cols.index('type_id'))  # Remove b from list
-cols.pop(cols.index('team_id'))  # Remove b from list
-cols.pop(cols.index('player_id'))  # Remove b from list
-cols.pop(cols.index('position_id'))  # Remove b from list
-cols.pop(cols.index('possession_team_id'))  # Remove b from list
+cols.pop(cols.index('id'))
+cols.pop(cols.index('index'))
+cols.pop(cols.index('period'))
+cols.pop(cols.index('minute'))
+cols.pop(cols.index('second'))
+cols.pop(cols.index('possession'))
+cols.pop(cols.index('tactics_formation'))
+cols.pop(cols.index('tactics_lineup'))
+cols.pop(cols.index('play_pattern_id'))
+cols.pop(cols.index('type_id'))
+cols.pop(cols.index('team_id'))
+cols.pop(cols.index('player_id'))
+cols.pop(cols.index('position_id'))
+cols.pop(cols.index('possession_team_id'))
 df = df[cols+['id', 'index', 'period', 'minute',
               'second', 'possession', 'possession_team_id', 'tactics_formation', 'tactics_lineup', 'play_pattern_id', 'type_id', 'team_id', 'player_id', 'position_id']]  # addo alla fine
 
@@ -69,8 +69,11 @@ p2 = '2nd period'
 # questo prende tutto il df.unique e drop non funziano sul df intero
 # playersger = df[df.team_name == 'Germany']
 
+# applico .unique alla series dei team name,che sono solo 2,per il team che gioca in casa uno index 0
 team_1 = df['team_name'].unique()[0]
+# scelgo le righe a cui corrisponde team name uguale a team a index 0
 mask_1 = df.loc[df['team_name'] == team_1]
+# le filtro per valori unici e non nulli
 player_names_1 = mask_1['player_name'].dropna().unique()
 
 team_2 = df['team_name'].unique()[1]
@@ -366,7 +369,7 @@ elif menu_action == Actionpress:
                 if menu_team == away_team:
                     ax.add_patch(dot)
 
-plt.title('Germany vs South Korea at 2018 FIFA World Cup')
+st.subheader('Germany vs South Korea at 2018 FIFA World Cup')
 fig.set_size_inches(10, 7)
 fig.savefig('korger_shots.png', dpi=300)
 st.pyplot(fig)
